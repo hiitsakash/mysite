@@ -19,6 +19,7 @@ from django.urls import path
 import blog.views
 
 urlpatterns = [
+    path('fetchPosts_with_name/<name>', blog.views.fetchPosts_with_name),
     path('', blog.views.fetchPosts),
     path('admin/', admin.site.urls),
 ]
